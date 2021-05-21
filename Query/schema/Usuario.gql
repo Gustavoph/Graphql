@@ -1,0 +1,25 @@
+enum TipoPerfil {
+  ADMIN
+  NORMAL
+}
+
+type Usuario {
+  id: ID
+  nome: String
+  idade: Int
+  email: String
+  salario: Float
+  ativo: Boolean
+  perfil: Perfil
+}
+
+type Perfil {
+  id: ID
+  descricao: TipoPerfil
+}
+
+type Query {
+  usuario(id: Int, nome: String): Usuario!
+  perfis: [Perfil!]
+  usuarios: [Usuario!]
+}
