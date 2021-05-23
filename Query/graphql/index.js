@@ -1,5 +1,7 @@
 const Query = require('./Query');
+const Usuario = require('./Type/Usuario.js');
 
-module.exports = [
+module.exports = {
+    Usuario,
     Query
-]
+}

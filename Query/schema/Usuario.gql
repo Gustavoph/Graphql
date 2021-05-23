@@ -20,6 +20,7 @@ type Perfil {
 
 type Query {
   usuario(id: Int, nome: String): Usuario!
+  perfil(id: Int, descricao: String): Perfil!
   perfis: [Perfil!]
   usuarios: [Usuario!]
 }
