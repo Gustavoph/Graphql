@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "nome": "Gustavo",
+        "idade": 19,
+        "email": "Gustavo@gmail.com",
+        "salario": 1000,
+        "perfil": 1,
+        "ativo": true
+    },
+    {
+        "id": 2,
+        "nome": "Giovanna",
+        "idade": 19,
+        "email": "Giovanna@gmail.com",
+        "salario": 1500,
+        "perfil": 2,
+        "ativo": false
+    },
+    {
+        "id": 3,
+        "nome": "Wanessa",
+        "idade": 36,
+        "email": "Wanessa@gmail.com",
+        "salario": 2000,
+        "perfil": 2,
+        "ativo": true
+    },
+    {
+        "id": 4,
+        "nome": "Maryanna",
+        "idade": 11,
+        "email": "Maryanna@gmail.com",
+        "salario": 2500,
+        "perfil": 2,
+        "ativo": false
+    },
+    {
+        "id": 5,
+        "nome": "Gilmar",
+        "idade": 36,
+        "email": "Gilmar@gmail.com",
+        "salario": 3000,
+        "perfil": 1,
+        "ativo": true
+    }
+]

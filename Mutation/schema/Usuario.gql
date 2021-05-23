@@ -1,0 +1,52 @@
+enum TipoPerfil {
+  ADMIN
+  NORMAL
+}
+
+input UsuarioInput {
+  nome: String
+  idade: Int
+  email: String
+  salario: Float
+  ativo: Boolean
+}
+
+input FiltroInput {
+  id: Int
+  email: String
+}
+
+type Usuario {
+  id: ID
+  nome: String
+  idade: Int
+  email: String
+  salario: Float
+  ativo: Boolean
+  perfil: Perfil
+}
+
+type Perfil {
+  id: ID
+  descricao: TipoPerfil
+}
+
+type Query {
+  usuario(id: Int, nome: String): Usuario!
+  perfil(id: Int, descricao: String): Perfil!
+  perfis: [Perfil!]
+  usuarios: [Usuario!]
+}
+
+type Mutation {
+  criarUsuario(
+    data: UsuarioInput
+  ): Usuario!
+  atualizarUsuario(
+    id: Int!
+    data: UsuarioInput
+  ): Usuario!
+  deletarUsuario(
+    filtro: FiltroInput
+  ): Boolean
+}
