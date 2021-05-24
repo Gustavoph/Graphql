@@ -34,7 +34,6 @@ module.exports = {
     },
     deletarUsuario(_, { filtro }) {
         console.log(filtro)
-        const usuarioDeletado = usuarios.find(usuario => usuario.id === filtro.id)
-        return true
+        return true;
     }
 }

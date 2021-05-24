@@ -1,6 +1,7 @@
 const { ApolloServer } = require('apollo-server');
 const { importSchema } = require('graphql-import');
 const resolvers = require('./graphql/index')
+const port = 3000;
 
 const server = new ApolloServer({
     typeDefs: importSchema('./schema/index.gql'),
@@ -14,6 +15,7 @@ const server = new ApolloServer({
     }
 })
 
-server.listen().then(({ url }) => {
+
+server.listen(port).then(({ url }) => {
     console.log(`Executando em  ${url}`)
 })
